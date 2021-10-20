@@ -2142,7 +2142,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\shutm\\.nuget\\packages\\": {},
+    "C:\\Users\\User\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
@@ -2151,7 +2151,7 @@
       "projectUniqueName": "D:\\Github\\Calculator\\App1\\App1.Android\\App1.Android.csproj",
       "projectName": "App1.Android",
       "projectPath": "D:\\Github\\Calculator\\App1\\App1.Android\\App1.Android.csproj",
-      "packagesPath": "C:\\Users\\shutm\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
       "outputPath": "D:\\Github\\Calculator\\App1\\App1.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
@@ -2159,7 +2159,7 @@
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\shutm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],

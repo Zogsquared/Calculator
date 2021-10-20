@@ -7,8 +7,8 @@
         <Label FontAttributes="Bold" Text="What is?" TextColor="DeepSkyBlue" FontSize="48" HorizontalTextAlignment="Center" Margin="0,25,0,100" Padding="0,30" BackgroundColor="#2b2c31"></Label>
         <Grid Grid.Row="0" Margin="0,0,0,100">
             <StackLayout Orientation="Vertical" HorizontalOptions="EndAndExpand" Margin="20,0" VerticalOptions="EndAndExpand">
-                <Label Text="9 + 10" FontSize="Large" TextColor="DeepSkyBlue"></Label>
-                <Label TextColor="White" Text="21" HorizontalOptions="EndAndExpand" FontSize="48"></Label>
+                <Label x:Name="typeText" Text="9 + 10" FontSize="Large" TextColor="DeepSkyBlue"></Label>
+                <Label x:Name="resultText" TextColor="White" Text="21" HorizontalOptions="EndAndExpand" FontSize="48"></Label>
                 
             </StackLayout>
         </Grid>
@@ -16,38 +16,38 @@
         <Grid Grid.Row="1" Margin="0,-100,0,0">
             <StackLayout Orientation="Vertical" Margin="20">
                 <StackLayout  VerticalOptions="FillAndExpand" Orientation="Horizontal">
-                    <Button CornerRadius="5" Text="AC" TextColor="AliceBlue" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
-                    <Button CornerRadius="5" Text="+/-" TextColor="AliceBlue" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
-                    <Button CornerRadius="5" Text="%" TextColor="AliceBlue" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
-                    <Button CornerRadius="5" Text="/" TextColor="AliceBlue" BackgroundColor="DeepSkyBlue" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
+                    <Button CornerRadius="5" Text="AC" TextColor="AliceBlue" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand" Clicked="OnClear"></Button>
+                    <Button CornerRadius="5" Text="√" TextColor="AliceBlue" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand" Clicked="OnSquareRoot"></Button>
+                    <Button CornerRadius="5" Text="%" TextColor="AliceBlue" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand" Clicked="OnPercentage"></Button>
+                    <Button CornerRadius="5" Text="/" TextColor="AliceBlue" BackgroundColor="DeepSkyBlue" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand" Clicked="OnSelectOperator"></Button>
                 </StackLayout>
 
                 <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
-                    <Button CornerRadius="5" Text="1" TextColor="AliceBlue" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
-                    <Button CornerRadius="5" Text="2" TextColor="AliceBlue" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
-                    <Button CornerRadius="5" Text="3" TextColor="AliceBlue" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
-                    <Button CornerRadius="5" Text="X" TextColor="AliceBlue" BackgroundColor="DeepSkyBlue" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
+                    <Button CornerRadius="5" Text="1" TextColor="AliceBlue" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand" Clicked="OnSelectNumber"></Button>
+                    <Button CornerRadius="5" Text="2" TextColor="AliceBlue" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand" Clicked="OnSelectNumber"></Button>
+                    <Button CornerRadius="5" Text="3" TextColor="AliceBlue" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand" Clicked="OnSelectNumber"></Button>
+                    <Button CornerRadius="5" Text="X" TextColor="AliceBlue" BackgroundColor="DeepSkyBlue" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand" Clicked="OnSelectOperator"></Button>
                 </StackLayout>
 
                 <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
-                    <Button CornerRadius="5" Text="4" TextColor="AliceBlue" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
-                    <Button CornerRadius="5" Text="5" TextColor="AliceBlue" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
-                    <Button CornerRadius="5" Text="6" TextColor="AliceBlue" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
-                    <Button CornerRadius="5" Text="+" TextColor="AliceBlue" BackgroundColor="DeepSkyBlue" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
+                    <Button CornerRadius="5" Text="4" TextColor="AliceBlue" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand" Clicked="OnSelectNumber"></Button>
+                    <Button CornerRadius="5" Text="5" TextColor="AliceBlue" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand" Clicked="OnSelectNumber"></Button>
+                    <Button CornerRadius="5" Text="6" TextColor="AliceBlue" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand" Clicked="OnSelectNumber"></Button>
+                    <Button CornerRadius="5" Text="+" TextColor="AliceBlue" BackgroundColor="DeepSkyBlue" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand" Clicked="OnSelectOperator"></Button>
                 </StackLayout>
 
                 <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
-                    <Button CornerRadius="5" Text="7" TextColor="AliceBlue" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
-                    <Button CornerRadius="5" Text="8" TextColor="AliceBlue" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
-                    <Button CornerRadius="5" Text="9" TextColor="AliceBlue" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
-                    <Button CornerRadius="5" Text="-" TextColor="AliceBlue" BackgroundColor="DeepSkyBlue" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
+                    <Button CornerRadius="5" Text="7" TextColor="AliceBlue" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand" Clicked="OnSelectNumber"></Button>
+                    <Button CornerRadius="5" Text="8" TextColor="AliceBlue" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand" Clicked="OnSelectNumber"></Button>
+                    <Button CornerRadius="5" Text="9" TextColor="AliceBlue" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand" Clicked="OnSelectNumber"></Button>
+                    <Button CornerRadius="5" Text="-" TextColor="AliceBlue" BackgroundColor="DeepSkyBlue" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand" Clicked="OnSelectOperator"></Button>
                 </StackLayout>
 
                 <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
-                    
-                    <Button Text="0" TextColor="AliceBlue" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
-                    <Button Text="." TextColor="AliceBlue" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
-                    <Button Text="=" TextColor="AliceBlue" BackgroundColor="DeepSkyBlue" WidthRequest="140" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
+
+                    <Button CornerRadius="5" Text="0" TextColor="AliceBlue" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand" Clicked="OnSelectNumber"></Button>
+                    <Button CornerRadius="5" Text="." TextColor="AliceBlue" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand" Clicked="OnSelectNumber"></Button>
+                    <Button CornerRadius="5" Text="=" TextColor="AliceBlue" BackgroundColor="DeepSkyBlue" WidthRequest="140" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"  Clicked="OnCalculate"></Button>
                 </StackLayout>
 
             </StackLayout>

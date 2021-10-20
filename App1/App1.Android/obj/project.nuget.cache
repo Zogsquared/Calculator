@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "uq40SSXfsmxcBMZ+QFi2WbpJsXckag+m9V+W/76wCPvDqYPV1dvlZzG3U/SNDTlq2MWzlLrezsUBwWkiS560lQ==",
+  "dgSpecHash": "sNmEm8iadfC2wftud3r5CsRflcaKdpcvaPYtDKNuy3Lz1bzMqNNdDNygcgq0xA1aEqHTZ+9cLEPoNJvFR5fM0g==",
   "success": true,
   "projectFilePath": "D:\\Github\\Calculator\\App1\\App1.Android\\App1.Android.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\shutm\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.activity\\1.1.0.5\\xamarin.androidx.activity.1.1.0.5.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.annotation\\1.1.0.8\\xamarin.androidx.annotation.1.1.0.8.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.annotation.experimental\\1.0.0.8\\xamarin.androidx.annotation.experimental.1.0.0.8.nupkg.sha512",

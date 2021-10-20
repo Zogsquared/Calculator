@@ -609,7 +609,6 @@ D:\Github\Calculator\App1\App1.Android\obj\Debug\110\lp\87\jl\files.cache
 D:\Github\Calculator\App1\App1.Android\obj\Debug\110\R.txt
 D:\Github\Calculator\App1\App1.Android\obj\Debug\110\R.cs.flag
 D:\Github\Calculator\App1\App1.Android\obj\Debug\110\App1.Android.csproj.CoreCompileInputs.cache
-D:\Github\Calculator\App1\App1.Android\obj\Debug\110\App1.Android.csproj.CopyComplete
 D:\Github\Calculator\App1\App1.Android\obj\Debug\110\App1.Android.dll
 D:\Github\Calculator\App1\App1.Android\obj\Debug\110\App1.Android.pdb
 D:\Github\Calculator\App1\App1.Android\obj\Debug\110\android\bin\com.companyname.app1.apk
@@ -1150,3 +1149,4 @@ D:\Github\Calculator\App1\App1.Android\obj\Debug\110\stamp\_ConvertResourcesCase
 D:\Github\Calculator\App1\App1.Android\obj\Debug\110\stamp\_GenerateJavaStubs.stamp
 D:\Github\Calculator\App1\App1.Android\obj\Debug\110\stamp\_GeneratePackageManagerJava.stamp
 D:\Github\Calculator\App1\App1.Android\obj\Debug\110\stamp\_ResolveLibraryProjectImports.stamp
+D:\Github\Calculator\App1\App1.Android\obj\Debug\110\App1.Android.csproj.CopyComplete
